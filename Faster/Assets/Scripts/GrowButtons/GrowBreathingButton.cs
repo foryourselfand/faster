@@ -1,12 +1,13 @@
+using UnityEngine;
+
 public class GrowBreathingButton : GrowButton
 {
-    public void fromUpToDown()
+    public override void fromUpToDown()
     {
-        base.fromUpToDown();
         target = down;
     }
 
-    public void fromDownToUp()
+    public override void fromDownToUp()
     {
         target = up;
     }

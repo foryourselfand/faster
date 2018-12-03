@@ -26,6 +26,7 @@ public abstract class GrowButton : MonoBehaviour
         {
             if (target == up)
             {
+                speed = secondSpeed;
                 fromUpToDown();
             }
             else if (target == down)
@@ -35,12 +36,7 @@ public abstract class GrowButton : MonoBehaviour
         }
     }
 
-    public void fromUpToDown()
-    {
-        speed = secondSpeed;
-    }
+    public abstract void fromUpToDown();
 
-    public void fromDownToUp()
-    {
-    }
+    public abstract void fromDownToUp();
 }

@@ -2,9 +2,12 @@ using UnityEngine;
 
 public class GrowClassicButton : GrowButton
 {
-    public void fromUpToDown()
+    public override void fromUpToDown()
     {
-        base.fromUpToDown();
         target = down;
+    }
+
+    public override void fromDownToUp()
+    {
     }
 }

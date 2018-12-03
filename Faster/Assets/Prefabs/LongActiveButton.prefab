@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4256013520488282}
   - component: {fileID: 212561464196599396}
-  - component: {fileID: 114315564904961886}
+  - component: {fileID: 114198021025825648}
   m_Layer: 0
   m_Name: LongActiveButton
   m_TagString: Untagged
@@ -41,7 +41,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114315564904961886
+--- !u!114 &114198021025825648
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
