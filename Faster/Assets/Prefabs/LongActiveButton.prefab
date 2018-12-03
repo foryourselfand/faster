@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4256013520488282}
   - component: {fileID: 212561464196599396}
-  - component: {fileID: 114438565987258058}
+  - component: {fileID: 114315564904961886}
   m_Layer: 0
   m_Name: LongActiveButton
   m_TagString: Untagged
@@ -41,7 +41,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114438565987258058
+--- !u!114 &114315564904961886
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,11 +49,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1138119009034230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6edc0e9b0d5824a169c6248c59b4bcd4, type: 3}
+  m_Script: {fileID: 11500000, guid: 45cbd790d59f474d97fb09071d461578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  target: {x: 1, y: 1, z: 1}
+  firstSpeed: 20
+  secondSpeed: 0
+  down: {x: 0, y: 0, z: 0}
 --- !u!212 &212561464196599396
 SpriteRenderer:
   m_ObjectHideFlags: 1
