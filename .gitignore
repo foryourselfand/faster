@@ -4,6 +4,7 @@ UnityGenerated/
 Library/
 Assets/AssetStoreTools*
 
+
 ExportedObj/
 *.svd
 *.userprefs
@@ -33,3 +34,7 @@ sysinfo.txt
 
 *.apk
 *.unitypackage
+
+
+Plugins/
+Plugins.meta

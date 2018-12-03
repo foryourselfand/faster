@@ -122,6 +122,8 @@ GameObject:
   m_Component:
   - component: {fileID: 68964845}
   - component: {fileID: 68964844}
+  - component: {fileID: 68964846}
+  - component: {fileID: 68964847}
   m_Layer: 0
   m_Name: Under_Classic
   m_TagString: GameType
@@ -188,6 +190,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &68964846
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 68964843}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.96, y: 0.8}
+    newSize: {x: 2.96, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.96, y: 0.8}
+  m_EdgeRadius: 0
+--- !u!114 &68964847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 68964843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75beb3ca6c1094238ba69c151bb46de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeButton: {fileID: 1138119009034230, guid: 0bc0ab8e7c42049b99f821bd8f7214d1,
+    type: 2}
 --- !u!1 &98143912
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,7 +410,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2137742, y: 0.028813783}
   m_AnchorMax: {x: 0.7763979, y: 0.06420919}
-  m_AnchoredPosition: {x: -0.15424, y: -1}
+  m_AnchoredPosition: {x: -0.15423584, y: -1}
   m_SizeDelta: {x: -0.042114, y: 0.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &312618226
@@ -497,6 +537,8 @@ GameObject:
   m_Component:
   - component: {fileID: 407542522}
   - component: {fileID: 407542521}
+  - component: {fileID: 407542523}
+  - component: {fileID: 407542524}
   m_Layer: 0
   m_Name: UnderSound
   m_TagString: Untagged
@@ -565,6 +607,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &407542523
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 407542520}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 0.8}
+    newSize: {x: 0.8, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 0.8}
+  m_EdgeRadius: 0
+--- !u!114 &407542524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 407542520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75beb3ca6c1094238ba69c151bb46de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeButton: {fileID: 1869034850384632, guid: 3c4d12358ce86492eba187aa4fce35fe,
+    type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +731,8 @@ GameObject:
   m_Component:
   - component: {fileID: 736982911}
   - component: {fileID: 736982910}
+  - component: {fileID: 736982912}
+  - component: {fileID: 736982913}
   m_Layer: 0
   m_Name: Under_Time
   m_TagString: GameType
@@ -717,6 +799,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &736982912
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 736982909}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.96, y: 0.8}
+    newSize: {x: 2.96, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.96, y: 0.8}
+  m_EdgeRadius: 0
+--- !u!114 &736982913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 736982909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75beb3ca6c1094238ba69c151bb46de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeButton: {fileID: 1138119009034230, guid: 0bc0ab8e7c42049b99f821bd8f7214d1,
+    type: 2}
 --- !u!1 &746100475
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,7 +869,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2137742, y: 0.7541863}
   m_AnchorMax: {x: 0.7763979, y: 0.87737244}
-  m_AnchoredPosition: {x: 130.6, y: -0.49996}
+  m_AnchoredPosition: {x: 130.6, y: -0.5}
   m_SizeDelta: {x: 9.400024, y: 0.7999878}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &746100477
@@ -1152,7 +1272,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &1336286057
 RectTransform:
@@ -1188,6 +1308,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1376668156}
   - component: {fileID: 1376668155}
+  - component: {fileID: 1376668157}
+  - component: {fileID: 1376668158}
   m_Layer: 0
   m_Name: UnderRating
   m_TagString: Untagged
@@ -1255,6 +1377,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1376668157
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1376668154}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 0.8}
+    newSize: {x: 0.8, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 0.8}
+  m_EdgeRadius: 0
+--- !u!114 &1376668158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1376668154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75beb3ca6c1094238ba69c151bb46de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeButton: {fileID: 1869034850384632, guid: 3c4d12358ce86492eba187aa4fce35fe,
+    type: 2}
 --- !u!1 &1437486428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,7 +1447,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2137742, y: 0.7541863}
   m_AnchorMax: {x: 0.7763979, y: 0.87737244}
-  m_AnchoredPosition: {x: -113, y: -0.49996}
+  m_AnchoredPosition: {x: -113, y: -0.5}
   m_SizeDelta: {x: 9.400024, y: 0.7999878}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1437486430
@@ -1339,6 +1499,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1653328781}
   - component: {fileID: 1653328780}
+  - component: {fileID: 1653328782}
+  - component: {fileID: 1653328783}
   m_Layer: 0
   m_Name: UnderInfo
   m_TagString: Untagged
@@ -1406,6 +1568,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1653328782
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1653328779}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 0.8}
+    newSize: {x: 0.8, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 0.8}
+  m_EdgeRadius: 0
+--- !u!114 &1653328783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1653328779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75beb3ca6c1094238ba69c151bb46de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeButton: {fileID: 1869034850384632, guid: 3c4d12358ce86492eba187aa4fce35fe,
+    type: 2}
 --- !u!1 &1740418088
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,6 +1615,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1740418090}
   - component: {fileID: 1740418089}
+  - component: {fileID: 1740418091}
+  - component: {fileID: 1740418092}
   m_Layer: 0
   m_Name: Under_Extra
   m_TagString: GameType
@@ -1481,6 +1683,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1740418091
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1740418088}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.96, y: 0.8}
+    newSize: {x: 2.96, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.96, y: 0.8}
+  m_EdgeRadius: 0
+--- !u!114 &1740418092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1740418088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75beb3ca6c1094238ba69c151bb46de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeButton: {fileID: 1138119009034230, guid: 0bc0ab8e7c42049b99f821bd8f7214d1,
+    type: 2}
 --- !u!1 &1766146151
 GameObject:
   m_ObjectHideFlags: 0
