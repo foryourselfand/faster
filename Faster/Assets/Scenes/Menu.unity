@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 98143913}
   - component: {fileID: 98143914}
   m_Layer: 0
-  m_Name: IconSoundOff
+  m_Name: IconSoundOn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -539,6 +539,7 @@ GameObject:
   - component: {fileID: 407542521}
   - component: {fileID: 407542523}
   - component: {fileID: 407542524}
+  - component: {fileID: 407542525}
   m_Layer: 0
   m_Name: UnderSound
   m_TagString: Untagged
@@ -645,6 +646,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeButton: {fileID: 1869034850384632, guid: 3c4d12358ce86492eba187aa4fce35fe,
     type: 2}
+--- !u!114 &407542525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 407542520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519d525896af540e2a695338a2b52b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonOn: {fileID: 98143912}
+  buttonOff: {fileID: 959630742}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +1011,7 @@ GameObject:
   - component: {fileID: 959630743}
   - component: {fileID: 959630744}
   m_Layer: 0
-  m_Name: IconSoungOn
+  m_Name: IconSoungOff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
