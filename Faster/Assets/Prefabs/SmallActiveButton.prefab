@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4487819868558362}
   - component: {fileID: 212439216218208988}
-  - component: {fileID: 114327665846011282}
   m_Layer: 0
   m_Name: SmallActiveButton
   m_TagString: Untagged
@@ -41,20 +40,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114327665846011282
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1869034850384632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45cbd790d59f474d97fb09071d461578, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstSpeed: 20
-  secondSpeed: 0
-  down: {x: 0, y: 0, z: 0}
 --- !u!212 &212439216218208988
 SpriteRenderer:
   m_ObjectHideFlags: 1
