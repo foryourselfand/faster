@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundButton : MonoBehaviour
+public class SoundClicker : ButtonClicker
 {
     public GameObject buttonOn, buttonOff;
 
@@ -20,8 +20,9 @@ public class SoundButton : MonoBehaviour
         }
     }
 
-    void OnMouseUp()
+    protected override void OnMouseUp()
     {
+        base.OnMouseUp();
         if (PlayerPrefs.GetString("Music") != "No")
         {
             PlayerPrefs.SetString("Music", "No");

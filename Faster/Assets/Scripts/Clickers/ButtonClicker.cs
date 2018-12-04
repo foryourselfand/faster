@@ -12,8 +12,8 @@ public class ButtonClicker : MonoBehaviour
         destroyObject = (GameObject) Instantiate(activeButton, transform.position, Quaternion.identity);
     }
 
-    void OnMouseUp()
+    protected virtual void OnMouseUp()
     {
-        DestroyObject(destroyObject);
+        Destroy(destroyObject);
     }
 }

@@ -18,6 +18,7 @@ TextureImporter:
     21300026: IconSoungOn
     21300028: IconSoundOff
     21300030: IconReplay
+    21300032: Mask
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -459,6 +460,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b1dbe65f5da464ba7afcb8deaa0bcc82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 38
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf2901f8a26546cb81a32498a5fc685
       vertices: []
       indices: 
       edges: []

@@ -1,12 +1,12 @@
 using UnityEngine;
 
-public class GrowButton : MonoBehaviour
+public class GrowDot : MonoBehaviour
 {
     public Vector3 firstScale;
     public Vector3 secondScale;
     public int count;
 
-    private float firstSpeed = 2;
+    private float firstSpeed = 10;
     private float speed;
 
     protected Vector3 target;
@@ -54,7 +54,8 @@ public class GrowButton : MonoBehaviour
         target = firstScale;
     }
 
-    public void EndTrigger()
+    protected virtual void EndTrigger()
     {
+        
     }
 }

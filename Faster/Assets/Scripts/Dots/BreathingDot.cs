@@ -1,13 +1,13 @@
 using UnityEngine;
 
-public class BreathingButton : GrowButton
+public class BreathingDot : GrowDot
 {
-    public Vector3 anotherSecond;
+    public Vector3 anotherSecondScale;
 
     protected override void fromSecondToFirst()
     {
         count += 2;
-        firstScale = anotherSecond;
+        firstScale = anotherSecondScale;
         target = firstScale;
     }
 }
