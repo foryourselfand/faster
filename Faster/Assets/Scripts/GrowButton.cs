@@ -15,7 +15,7 @@ public class GrowButton : MonoBehaviour
     {
         transform.localScale = firstScale;
         target = secondScale;
-        
+
         speed = firstSpeed;
     }
 
@@ -49,7 +49,7 @@ public class GrowButton : MonoBehaviour
         target = secondScale;
     }
 
-    private void fromSecondToFirst()
+    protected virtual void fromSecondToFirst()
     {
         target = firstScale;
     }
