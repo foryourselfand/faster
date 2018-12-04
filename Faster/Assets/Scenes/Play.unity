@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &218471275
 GameObject:
@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &227063658
 GameObject:
@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &267077520
 GameObject:
@@ -571,7 +571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &309516785
 GameObject:
@@ -686,7 +686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &345232938
 GameObject:
@@ -801,7 +801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &458664738
 GameObject:
@@ -968,7 +968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &586449519
 GameObject:
@@ -1083,7 +1083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &746045260
 GameObject:
@@ -1198,7 +1198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &781261035
 GameObject:
@@ -1313,7 +1313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &833624105
 GameObject:
@@ -1428,7 +1428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &884151410
 GameObject:
@@ -1543,7 +1543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &1017632971
 GameObject:
@@ -1658,7 +1658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &1057841066
 GameObject:
@@ -1773,7 +1773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &1105992623
 GameObject:
@@ -1888,7 +1888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &1257168104
 GameObject:
@@ -2003,7 +2003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &1369534383
 GameObject:
@@ -2118,7 +2118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &1532844497
 GameObject:
@@ -2233,7 +2233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &1621397959
 GameObject:
@@ -2348,7 +2348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &1787574330
 GameObject:
@@ -2463,7 +2463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &1849022812
 GameObject:
@@ -2578,7 +2578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &1922062220
 GameObject:
@@ -2693,7 +2693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &2012650694
 GameObject:
@@ -2808,7 +2808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &2096941799
 GameObject:
@@ -2923,7 +2923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681013e2d688e4de78d5090d92adaf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedDot: {fileID: 0}
+  ClickedDot: {fileID: 0}
   IsFree: 1
 --- !u!1 &2122256991
 GameObject:

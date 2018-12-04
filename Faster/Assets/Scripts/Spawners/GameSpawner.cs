@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameSpawner : MonoBehaviour
 {
-    public GrowDot StartDot;
+    public GameObject StartDot;
 
     protected virtual void Start()
     {
