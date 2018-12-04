@@ -7,7 +7,7 @@ public class GrowDot : MonoBehaviour
     public int count;
 
     private float firstSpeed = 10;
-    private float speed;
+    protected float speed;
 
     protected Vector3 target;
 

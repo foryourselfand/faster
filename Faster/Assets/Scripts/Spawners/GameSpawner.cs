@@ -4,23 +4,22 @@ using UnityEngine;
 
 public class GameSpawner : MonoBehaviour
 {
-    [HideInInspector] public static bool[] Field = new bool[24];
     public GrowDot StartDot;
 
-    private void Start()
+    protected virtual void Start()
     {
-        SpawnStart();
+        DontDestroyOnLoad(gameObject);
+        Invoke("SpawnStart", 0.1f);
     }
 
-    public GridClicker GetFreeGrid()
+    GridClicker GetFreeGrid()
     {
         GridClicker tempGrid;
         do
         {
-            int num = Random.Range(0, 24);
-            string name = string.Format("SmallDefaultButton ({0})", num);
-            Debug.Log(name);
-            tempGrid = GameObject.Find(name).gameObject.GetComponent<GridClicker>();
+            var randomNumber = Random.Range(0, 24);
+            var gridName = string.Format("SmallDefaultButton ({0})", randomNumber);
+            tempGrid = GameObject.Find(gridName).gameObject.GetComponent<GridClicker>();
         } while (!tempGrid.IsFree);
 
         tempGrid.IsFree = false;
@@ -28,9 +27,10 @@ public class GameSpawner : MonoBehaviour
         return tempGrid;
     }
 
-    protected void SpawnStart()
+    void SpawnStart()
     {
-        GridClicker temp = GetFreeGrid();
-        Instantiate(StartDot, temp.transform.position, Quaternion.identity);
+        var freeGrid = GetFreeGrid();
+        var spawnedDot = Instantiate(StartDot, freeGrid.transform.position, Quaternion.identity);
+        spawnedDot.transform.parent = freeGrid.transform;
     }
 }

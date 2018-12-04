@@ -56,6 +56,7 @@ MonoBehaviour:
   secondScale: {x: 1, y: 1, z: 1}
   count: 2
   anotherSecondScale: {x: 0.5, y: 0.5, z: 0.5}
+  secondSpeed: 2
 --- !u!212 &212710180828445466
 SpriteRenderer:
   m_ObjectHideFlags: 1
