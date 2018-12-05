@@ -9,7 +9,7 @@ public abstract class _GameSpawner : MonoBehaviour
 
     protected virtual void Start()
     {
-        SpawnStart();
+        gameObject.SetActive(false);
     }
 
     GridClicker GetFreeGrid()
@@ -27,7 +27,7 @@ public abstract class _GameSpawner : MonoBehaviour
         return tempGrid;
     }
 
-    void SpawnStart()
+    public void SpawnStart()
     {
         var freeGrid = GetFreeGrid();
         var spawnedDot = Instantiate(startDot, freeGrid.transform.position, Quaternion.identity);

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4953964361991558}
   - component: {fileID: 212232477682573552}
   - component: {fileID: 61408309245303742}
+  - component: {fileID: 114925445813585764}
   m_Layer: 0
   m_Name: StartMask
   m_TagString: Untagged
@@ -66,6 +67,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &114925445813585764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1257212205381340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acdc41001e404a05ba91016825a34088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dot: {fileID: 1317979487603934, guid: 15ca9f79cce674cf8a519f7b444167f0, type: 2}
 --- !u!212 &212232477682573552
 SpriteRenderer:
   m_ObjectHideFlags: 1
