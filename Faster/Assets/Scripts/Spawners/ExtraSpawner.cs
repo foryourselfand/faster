@@ -8,4 +8,9 @@ public class ExtraSpawner : _GameSpawner
     {
         base.Start();
     }
+    
+    protected override void SpawnNewWave()
+    {
+        Debug.Log("Extra New Wave");
+    }
 }

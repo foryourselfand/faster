@@ -8,4 +8,9 @@ public class TimeSpawner : _GameSpawner
     {
         base.Start();
     }
+
+    protected override void SpawnNewWave()
+    {
+        Debug.Log("Time New Wave");
+    }
 }

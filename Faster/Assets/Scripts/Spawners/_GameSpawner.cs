@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class _GameSpawner : MonoBehaviour
+public abstract class _GameSpawner : MonoBehaviour
 {
+    [HideInInspector] public static string GameMode;
     public GameObject startDot;
 
     protected virtual void Start()
     {
-        DontDestroyOnLoad(gameObject);
-        Invoke("SpawnStart", 0.1f);
+        SpawnStart();
     }
 
     GridClicker GetFreeGrid()
@@ -33,4 +33,6 @@ public class _GameSpawner : MonoBehaviour
         var spawnedDot = Instantiate(startDot, freeGrid.transform.position, Quaternion.identity);
         spawnedDot.transform.parent = freeGrid.transform;
     }
+
+    protected abstract void SpawnNewWave();
 }

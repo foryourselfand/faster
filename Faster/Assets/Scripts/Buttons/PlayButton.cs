@@ -5,12 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayButton : _MenuButton
 {
-    public _GameSpawner gameSpawner;
-
     protected override void OnMouseUp()
     {
         base.OnMouseUp();
+        _GameSpawner.GameMode = name.Split('_')[1];
         SceneManager.LoadScene("Play");
-        gameSpawner.gameObject.SetActive(true);
     }
 }

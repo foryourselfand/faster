@@ -8,4 +8,9 @@ public class ClassicSpawner : _GameSpawner
     {
         base.Start();
     }
+
+    protected override void SpawnNewWave()
+    {
+        Debug.Log("Classic New Wave");
+    }
 }
