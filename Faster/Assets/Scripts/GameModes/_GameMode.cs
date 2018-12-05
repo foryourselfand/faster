@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class _GameSpawner : MonoBehaviour
+public abstract class _GameMode : MonoBehaviour
 {
     [HideInInspector] public static string GameMode;
     public GameObject startDot;
@@ -32,7 +32,8 @@ public abstract class _GameSpawner : MonoBehaviour
         var freeGrid = GetFreeGrid();
         var spawnedDot = Instantiate(startDot, freeGrid.transform.position, Quaternion.identity);
         spawnedDot.transform.parent = freeGrid.transform;
+        GameObject.Find("StartText").transform.position = spawnedDot.transform.position;
     }
 
-    protected abstract void SpawnNewWave();
+    public abstract void SpawnNewWave();
 }

@@ -2,16 +2,22 @@ using UnityEngine;
 
 public class Manager : MonoBehaviour
 {
-    private GameObject activeSpawner;
+    
+    private _GameMode activeSpawner;
 
     private void Awake()
     {
-        activeSpawner = GameObject.Find(string.Format("{0}Spawner", _GameSpawner.GameMode));
+        activeSpawner = GameObject.Find(string.Format("{0}Mode", _GameMode.GameMode)).GetComponent<_GameMode>();
     }
 
     void Start()
     {
-        activeSpawner.SetActive(true);
-        activeSpawner.GetComponent<_GameSpawner>().SpawnStart();    
+        activeSpawner.gameObject.SetActive(true);
+        activeSpawner.SpawnStart();    
+    }
+
+    public void SpawnNewWave()
+    {
+        activeSpawner.SpawnNewWave();
     }
 }

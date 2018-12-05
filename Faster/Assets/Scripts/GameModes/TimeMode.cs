@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TimeSpawner : _GameSpawner
+public class TimeMode : _GameMode
 {
     protected override void Start()
     {
         base.Start();
     }
 
-    protected override void SpawnNewWave()
+    public override void SpawnNewWave()
     {
         Debug.Log("Time New Wave");
     }

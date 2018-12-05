@@ -10,6 +10,6 @@ public class _DotSpawner : MonoBehaviour
     protected void SpawnDot()
     {
         child = Instantiate(dotToSpawn, transform.position, Quaternion.identity);
-        child.transform.parent = gameObject.transform;
+        child.transform.parent = transform;
     }
 }

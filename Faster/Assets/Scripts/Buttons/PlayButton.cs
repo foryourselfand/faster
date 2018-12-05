@@ -8,7 +8,7 @@ public class PlayButton : _MenuButton
     protected override void OnMouseUp()
     {
         base.OnMouseUp();
-        _GameSpawner.GameMode = name.Split('_')[1];
+        _GameMode.GameMode = name.Split('_')[1];
         SceneManager.LoadScene("Play");
     }
 }

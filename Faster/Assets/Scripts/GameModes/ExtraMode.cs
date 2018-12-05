@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExtraSpawner : _GameSpawner
+public class ExtraMode : _GameMode
 {
     protected override void Start()
     {
         base.Start();
     }
-    
-    protected override void SpawnNewWave()
+
+    public override void SpawnNewWave()
     {
         Debug.Log("Extra New Wave");
     }

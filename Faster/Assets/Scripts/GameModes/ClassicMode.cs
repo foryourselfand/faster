@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClassicSpawner : _GameSpawner
+public class ClassicMode : _GameMode
 {
     protected override void Start()
     {
         base.Start();
     }
 
-    protected override void SpawnNewWave()
+    public override void SpawnNewWave()
     {
         Debug.Log("Classic New Wave");
     }

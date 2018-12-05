@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4953964361991558}
   - component: {fileID: 212232477682573552}
   - component: {fileID: 61408309245303742}
-  - component: {fileID: 114925445813585764}
+  - component: {fileID: 114706321551188168}
   m_Layer: 0
   m_Name: StartMask
   m_TagString: Untagged
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1257212205381340}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.451, y: -3.516, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -67,7 +67,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.8}
   m_EdgeRadius: 0
---- !u!114 &114925445813585764
+--- !u!114 &114706321551188168
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,10 +75,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1257212205381340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acdc41001e404a05ba91016825a34088, type: 3}
+  m_Script: {fileID: 11500000, guid: 1668dd0c723d44a2b5b36601140f6548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dotToSpawn: {fileID: 114782576199491414, guid: 15ca9f79cce674cf8a519f7b444167f0,
+  dotToSpawn: {fileID: 114455967244270666, guid: 15ca9f79cce674cf8a519f7b444167f0,
     type: 2}
 --- !u!212 &212232477682573552
 SpriteRenderer:
