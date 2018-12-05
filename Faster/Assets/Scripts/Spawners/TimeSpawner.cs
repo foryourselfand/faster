@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TimeSpawner : GameSpawner
+public class TimeSpawner : _GameSpawner
 {
     protected override void Start()
     {
         base.Start();
-        Debug.Log("Time");
     }
 }

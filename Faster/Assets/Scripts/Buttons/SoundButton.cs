@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundClicker : ButtonClicker
+public class SoundButton : _MenuButton
 {
     public GameObject buttonOn, buttonOff;
 

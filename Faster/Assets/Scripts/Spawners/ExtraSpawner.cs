@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExtraSpawner : GameSpawner
+public class ExtraSpawner : _GameSpawner
 {
     protected override void Start()
     {
         base.Start();
-        Debug.Log("Extra");
     }
 }

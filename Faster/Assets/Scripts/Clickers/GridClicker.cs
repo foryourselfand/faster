@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GridClicker : SpawnClicker
+public class GridClicker : _SpawnClicker
 {
-    [HideInInspector] public bool IsFree = true;
+    [HideInInspector] public bool isFree = true;
 
     protected override void OnMouseDown()
     {
         base.OnMouseDown();
-        IsFree = false;
+        isFree = false;
     }
 }

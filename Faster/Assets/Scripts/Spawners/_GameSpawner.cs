@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameSpawner : MonoBehaviour
+public class _GameSpawner : MonoBehaviour
 {
-    public GameObject StartDot;
+    public GameObject startDot;
 
     protected virtual void Start()
     {
@@ -20,9 +20,9 @@ public class GameSpawner : MonoBehaviour
             var randomNumber = Random.Range(0, 24);
             var gridName = string.Format("SmallDefaultButton ({0})", randomNumber);
             tempGrid = GameObject.Find(gridName).gameObject.GetComponent<GridClicker>();
-        } while (!tempGrid.IsFree);
+        } while (!tempGrid.isFree);
 
-        tempGrid.IsFree = false;
+        tempGrid.isFree = false;
 
         return tempGrid;
     }
@@ -30,7 +30,7 @@ public class GameSpawner : MonoBehaviour
     void SpawnStart()
     {
         var freeGrid = GetFreeGrid();
-        var spawnedDot = Instantiate(StartDot, freeGrid.transform.position, Quaternion.identity);
+        var spawnedDot = Instantiate(startDot, freeGrid.transform.position, Quaternion.identity);
         spawnedDot.transform.parent = freeGrid.transform;
     }
 }

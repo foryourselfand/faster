@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GrowDot : MonoBehaviour
+public class _GrowDot : MonoBehaviour
 {
     public Vector3 firstScale;
     public Vector3 secondScale;
@@ -56,6 +56,5 @@ public class GrowDot : MonoBehaviour
 
     protected virtual void EndTrigger()
     {
-        
     }
 }

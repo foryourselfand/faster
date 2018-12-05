@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-public class BreathingDot : GrowDot
+public class BreathingDot : _GrowDot
 {
     public Vector3 anotherSecondScale;
     public float secondSpeed;
