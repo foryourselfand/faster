@@ -10,6 +10,5 @@ public class GridClicker : _SpawnClicker
     {
         base.OnMouseDown();
         isFree = false;
-        child.transform.parent = gameObject.transform;
     }
 }

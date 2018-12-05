@@ -10,5 +10,6 @@ public class _SpawnClicker : MonoBehaviour
     protected virtual void OnMouseDown()
     {
         child = Instantiate(clickedDot, transform.position, Quaternion.identity);
+        child.transform.parent = gameObject.transform;
     }
 }
