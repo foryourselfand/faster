@@ -1,13 +1,10 @@
 using UnityEngine;
 
-public class MaskClicker : MonoBehaviour
+public class MaskClicker : _DotSpawner
 {
-    public GameObject dot;
-
     private void Start()
     {
-        var temp = Instantiate(dot, transform.position, Quaternion.identity);
-        temp.transform.parent = gameObject.transform;
+        SpawnDot();
     }
 
     private void OnMouseDown()

@@ -1,8 +1,11 @@
-public class MaskDot : _SpawnClicker
+using UnityEngine;
+
+public class MaskDot : _DotSpawner
 {
     public void OnClicked()
     {
-        OnMouseDown();
-        Destroy(gameObject);
+        SpawnDot();
+        child.transform.parent = gameObject.transform.parent.parent;
+        Destroy(transform.parent.gameObject);
     }
 }

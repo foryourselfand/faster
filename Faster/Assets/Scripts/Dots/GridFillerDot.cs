@@ -4,7 +4,7 @@ public class GridFillerDot : _GrowDot
 {
     protected override void EndTrigger()
     {
-        gameObject.transform.root.GetComponentInChildren<GridClicker>().isFree = true;
+        GetComponentInParent<GridClicker>().isFree = true;
         Destroy(gameObject);
     }
 }
