@@ -10,11 +10,16 @@ public abstract class _GameMode : MonoBehaviour
     public MaskDot dotToSpawn;
     public GameObject decreasingType;
 
-    protected virtual void Start()
+    void Start()
     {
         gameObject.SetActive(false);
         decreasingType.SetActive(false);
     }
+
+    public abstract void SpawnNewWave();
+    
+    public abstract void ChangeIfAddition();
+    
 
     GridClicker GetFreeGrid()
     {
@@ -39,11 +44,11 @@ public abstract class _GameMode : MonoBehaviour
         GameObject.Find("StartText").transform.position = spawnedDot.transform.position;
     }
 
-    public abstract void SpawnNewWave();
 
     public void Activate()
     {
         gameObject.SetActive(true);
         decreasingType.SetActive(true);
+        ChangeIfAddition();
     }
 }

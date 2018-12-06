@@ -9,7 +9,7 @@ public class PlayButton : _MenuButton
     {
         base.OnMouseUp();
         _GameMode.GameMode = name.Split('_')[1];
-        _GameMode.Addition = false;
+        _GameMode.Addition = true;
         SceneManager.LoadScene("Play");
     }
 }
