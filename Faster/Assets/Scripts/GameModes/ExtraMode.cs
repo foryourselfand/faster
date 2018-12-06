@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExtraMode : _GameMode
+public class ExtraMode : ClassicMode
 {
     protected override void Start()
     {

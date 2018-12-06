@@ -4,12 +4,16 @@ using UnityEngine;
 
 public abstract class _GameMode : MonoBehaviour
 {
-    [HideInInspector] public static string GameMode;
+    public static string GameMode;
+    public static bool Addition;
     public GameObject startDot;
+    public MaskDot dotToSpawn;
+    public GameObject decreasingType;
 
     protected virtual void Start()
     {
         gameObject.SetActive(false);
+        decreasingType.SetActive(false);
     }
 
     GridClicker GetFreeGrid()
@@ -36,4 +40,10 @@ public abstract class _GameMode : MonoBehaviour
     }
 
     public abstract void SpawnNewWave();
+
+    public void Activate()
+    {
+        gameObject.SetActive(true);
+        decreasingType.SetActive(true);
+    }
 }

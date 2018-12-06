@@ -12,7 +12,7 @@ public class Manager : MonoBehaviour
 
     void Start()
     {
-        activeSpawner.gameObject.SetActive(true);
+        activeSpawner.Activate();
         activeSpawner.SpawnStart();    
     }
 
