@@ -1,4 +1,4 @@
-public class ClassicMaskDot : MaskDot
+public class ClassicMaskDot : _MaskDot
 {
     public _GrowDot dotOnDecrease;
 

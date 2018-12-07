@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MaskDot : _DotSpawner
+public class _MaskDot : _DotSpawner
 {
     public void OnClicked()
     {

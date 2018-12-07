@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4953964361991558}
   - component: {fileID: 212232477682573552}
   - component: {fileID: 61408309245303742}
-  - component: {fileID: 114706321551188168}
+  - component: {fileID: 114744865207134410}
   m_Layer: 0
-  m_Name: StartMask
+  m_Name: MaskStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +67,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.8}
   m_EdgeRadius: 0
---- !u!114 &114706321551188168
+--- !u!114 &114744865207134410
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1257212205381340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1668dd0c723d44a2b5b36601140f6548, type: 3}
+  m_Script: {fileID: 11500000, guid: acdc41001e404a05ba91016825a34088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dotToSpawn: {fileID: 114455967244270666, guid: 15ca9f79cce674cf8a519f7b444167f0,

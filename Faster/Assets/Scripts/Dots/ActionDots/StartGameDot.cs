@@ -1,11 +1,9 @@
 using UnityEngine;
 
-public class StartClicker : MaskClicker
+public class StartGameDot : GridFillerDot
 {
-    protected override void OnMouseDown()
+    protected override void actionOnStart()
     {
-        base.OnMouseDown();
-        
         GameObject.Find("Manager").GetComponent<Manager>().SpawnNewWave();
         GameObject.Find("StartText").SetActive(false);
     }

@@ -17,6 +17,7 @@ public class _GrowDot : MonoBehaviour
         target = secondScale;
 
         speed = firstSpeed;
+        actionOnStart();
     }
 
     void Update()
@@ -39,7 +40,7 @@ public class _GrowDot : MonoBehaviour
             }
             else
             {
-                EndTrigger();
+                actionOnEnd();
             }
         }
     }
@@ -54,7 +55,11 @@ public class _GrowDot : MonoBehaviour
         target = firstScale;
     }
 
-    protected virtual void EndTrigger()
+    protected virtual void actionOnStart()
+    {
+    }
+
+    protected virtual void actionOnEnd()
     {
     }
 }

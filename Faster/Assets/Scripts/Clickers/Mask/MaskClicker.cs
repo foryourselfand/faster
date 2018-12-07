@@ -9,6 +9,6 @@ public class MaskClicker : _DotSpawner
 
     protected virtual void OnMouseDown()
     {
-        GetComponentInChildren<MaskDot>().OnClicked();
+        GetComponentInChildren<_MaskDot>().OnClicked();
     }
 }
