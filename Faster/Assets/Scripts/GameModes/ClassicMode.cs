@@ -5,10 +5,20 @@ using UnityEngine;
 public class ClassicMode : _GameMode
 {
     private int heartCount;
-
+    
     public override void SpawnNewWave()
     {
         Debug.Log("Classic New Wave");
+        StartCoroutine(SpawnDots());
+    }
+    
+    IEnumerator SpawnDots()
+    {
+        while (true)
+        {
+            SpawnNewDot(dotToSpawn);
+            yield return new WaitForSeconds(1);
+        }
     }
 
     public override void ChangeIfAddition()

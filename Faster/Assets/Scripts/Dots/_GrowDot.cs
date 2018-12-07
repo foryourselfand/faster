@@ -6,7 +6,7 @@ public class _GrowDot : MonoBehaviour
     public Vector3 secondScale;
     public int count;
 
-    private float firstSpeed = 10;
+    private float firstSpeed = 5;
     protected float speed;
 
     protected Vector3 target;

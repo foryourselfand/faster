@@ -1474,7 +1474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDot: {fileID: 1257212205381340, guid: 0c7f629812f404a70b21b84fa88544f7, type: 2}
-  dotToSpawn: {fileID: 0}
+  dotToSpawn: {fileID: 1437398274498736, guid: 670f0cc65f1c944ea89c32a90d682c76, type: 2}
   decreasingType: {fileID: 1682177103}
 --- !u!1 &781261035
 GameObject:
@@ -2446,7 +2446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDot: {fileID: 1257212205381340, guid: 0c7f629812f404a70b21b84fa88544f7, type: 2}
-  dotToSpawn: {fileID: 0}
+  dotToSpawn: {fileID: 1437398274498736, guid: 670f0cc65f1c944ea89c32a90d682c76, type: 2}
   decreasingType: {fileID: 1682177103}
 --- !u!1 &1169999218
 GameObject:

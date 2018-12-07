@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212385577302959456}
   - component: {fileID: 114100850352521220}
   m_Layer: 0
-  m_Name: BadButton
+  m_Name: BadOverDot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

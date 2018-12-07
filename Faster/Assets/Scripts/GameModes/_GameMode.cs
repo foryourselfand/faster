@@ -7,19 +7,18 @@ public abstract class _GameMode : MonoBehaviour
     public static string GameMode;
     public static bool Addition;
     public GameObject startDot;
-    public MaskDot dotToSpawn;
+    public GameObject dotToSpawn;
     public GameObject decreasingType;
 
-    void Start()
+    protected virtual void Start()
     {
         gameObject.SetActive(false);
         decreasingType.SetActive(false);
     }
 
     public abstract void SpawnNewWave();
-    
+
     public abstract void ChangeIfAddition();
-    
 
     GridClicker GetFreeGrid()
     {
@@ -38,10 +37,16 @@ public abstract class _GameMode : MonoBehaviour
 
     public void SpawnStart()
     {
-        var freeGrid = GetFreeGrid();
-        var spawnedDot = Instantiate(startDot, freeGrid.transform.position, Quaternion.identity);
-        spawnedDot.transform.parent = freeGrid.transform;
+        var spawnedDot = SpawnNewDot(startDot);
         GameObject.Find("StartText").transform.position = spawnedDot.transform.position;
+    }
+
+    protected GameObject SpawnNewDot(GameObject newDot)
+    {
+        var freeGrid = GetFreeGrid();
+        var spawnedDot = Instantiate(newDot, freeGrid.transform.position, Quaternion.identity);
+        spawnedDot.transform.parent = freeGrid.transform;
+        return spawnedDot;
     }
 
 

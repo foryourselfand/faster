@@ -6,10 +6,29 @@ using UnityEngine.UI;
 public class TimeMode : _GameMode
 {
     private int timeCount;
-    
+    private Text timeText;
+
+    protected override void Start()
+    {
+        base.Start();
+        timeText = decreasingType.GetComponent<Text>();
+    }
+
     public override void SpawnNewWave()
     {
         Debug.Log("Time New Wave");
+        StartCoroutine(DecreaseTimeScore());
+        
+    }
+
+    IEnumerator DecreaseTimeScore()
+    {
+        while (true)
+        {
+            timeCount--;
+            SetTimeTo(timeCount);
+            yield return new WaitForSeconds(1);
+        }
     }
 
     public override void ChangeIfAddition()
@@ -17,7 +36,11 @@ public class TimeMode : _GameMode
         timeCount = 30;
         if (Addition)
             timeCount += 10;
+        SetTimeTo(timeCount);
+    }
 
-        decreasingType.GetComponent<Text>().text = string.Format("0:{0:0}", timeCount);
+    private void SetTimeTo(int count)
+    {
+        timeText.text = string.Format("0:{0:0}", count);
     }
 }
