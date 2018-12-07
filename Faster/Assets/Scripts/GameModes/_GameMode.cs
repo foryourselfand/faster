@@ -16,7 +16,7 @@ public abstract class _GameMode : MonoBehaviour
         decreasingType.SetActive(false);
     }
 
-    public abstract void SpawnNewWave();
+    public abstract void SpawnStartWave();
 
     public abstract void ChangeIfAddition();
 

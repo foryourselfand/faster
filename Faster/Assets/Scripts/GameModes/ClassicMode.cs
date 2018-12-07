@@ -5,9 +5,11 @@ using UnityEngine;
 public class ClassicMode : _GameMode
 {
     private int heartCount;
+    public static int score;
     
-    public override void SpawnNewWave()
+    public override void SpawnStartWave()
     {
+        score = 0;
         Debug.Log("Classic New Wave");
         StartCoroutine(SpawnDots());
     }

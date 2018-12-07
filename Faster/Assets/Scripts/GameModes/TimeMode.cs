@@ -14,7 +14,7 @@ public class TimeMode : _GameMode
         timeText = decreasingType.GetComponent<Text>();
     }
 
-    public override void SpawnNewWave()
+    public override void SpawnStartWave()
     {
         Debug.Log("Time New Wave");
         StartCoroutine(DecreaseTimeScore());

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ExtraMode : ClassicMode
 {
-    public override void SpawnNewWave()
+    public override void SpawnStartWave()
     {
         Debug.Log("Extra New Wave");
     }

@@ -19,6 +19,6 @@ public class Manager : MonoBehaviour
 
     public void SpawnNewWave()
     {
-        activeSpawner.SpawnNewWave();
+        activeSpawner.SpawnStartWave();
     }
 }

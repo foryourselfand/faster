@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ClassicDot : _GrowDot
+public class ClassicDot : _ChangeSpeedDot
 {
     protected override void actionOnEnd()
     {
