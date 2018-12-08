@@ -5,6 +5,7 @@ using UnityEngine;
 public class ClassicMode : _GameMode
 {
     private int heartCount;
+    private int maxHearth;
 
     public override void ChangeIfAddition()
     {
@@ -20,6 +21,8 @@ public class ClassicMode : _GameMode
             heartCount += 2;
             decreasingType.transform.position = new Vector3(-0.5f, 0, 0);
         }
+
+        maxHearth = heartCount;
     }
 
     public override void ResetValues()
@@ -39,5 +42,23 @@ public class ClassicMode : _GameMode
         //TODO Level by level decreasing
         if (secTillNext >= 0.4f)
             secTillNext -= 0.05f;
+    }
+
+    public override void DecreaseHearth()
+    {
+        heartCount--;
+        GameObject.Find(string.Format("Hearth ({0})", heartCount)).GetComponent<NotStarted>().GoDownOnce();
+    }
+
+    public override void LastCheck()
+    {
+        if (heartCount == 0)
+        {
+            GameOver();
+            for (int i = 0; i < maxHearth; i++)
+            {
+                GameObject.Find(string.Format("Hearth ({0})", i)).GetComponent<NotStarted>().LastChange();
+            }
+        }
     }
 }

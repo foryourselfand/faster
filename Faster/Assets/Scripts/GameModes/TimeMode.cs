@@ -37,9 +37,9 @@ public class TimeMode : _GameMode
     {
         timeCount--;
         SetTimeTo(timeCount);
-        
-        if(timeCount == 0)
-           GameOver();
+
+        if (timeCount == 0)
+            GameOver();
     }
 
     public void CheckForNewWave()

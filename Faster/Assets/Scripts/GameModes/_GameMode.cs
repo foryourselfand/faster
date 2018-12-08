@@ -37,13 +37,21 @@ public abstract class _GameMode : MonoBehaviour
 
     public abstract void ResetValues();
 
-    public virtual IEnumerator SpawnDots()
+    public IEnumerator SpawnDots()
     {
         while (isPlaying == 1)
         {
             ActionInCoroutine();
             yield return new WaitForSeconds(secTillNext);
         }
+    }
+
+    public virtual void DecreaseHearth()
+    {
+    }
+
+    public virtual void LastCheck()
+    {
     }
 
     protected abstract void ActionInCoroutine();

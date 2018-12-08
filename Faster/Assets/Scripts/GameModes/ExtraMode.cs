@@ -14,4 +14,5 @@ public class ExtraMode : ClassicMode
             SpawnNewDot(dotToSpawn);
         DecreaseSeconds();
     }
+ 
 }

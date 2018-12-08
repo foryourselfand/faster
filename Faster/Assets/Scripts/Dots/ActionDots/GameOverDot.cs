@@ -6,4 +6,9 @@ public class GameOverDot : AlwaysDot
     {
         GameObject.Find("Manager").GetComponent<Manager>().GetActiveMode().GameOver();
     }
+    
+    protected override void actionOnEnd()
+    {
+        Debug.Log("Game Over Screen");
+    }
 }

@@ -38,7 +38,7 @@ public class _GrowDot : MonoBehaviour
                     fromSecondToFirst();
                 }
             }
-            else
+            else if (count > 0)
             {
                 actionOnEnd();
             }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AlwaysDot : GridFillerDot
+public class AlwaysDot : _GrowDot
 {
     protected override void ChangeScale()
     {
