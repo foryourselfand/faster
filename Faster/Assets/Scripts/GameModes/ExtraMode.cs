@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class ExtraMode : ClassicMode
 {
-    public override void SpawnStartWave()
-    {
-        Debug.Log("Extra New Wave");
-    }
+    public GameObject extraDot;
+
+//    protected override IEnumerator SpawnNewWave()
+//    {
+//        while (true)
+//        {
+//            SpawnNewDot(dotToSpawn);
+//            yield return new WaitForSeconds(0.5f);
+//        }
+//    }
 }

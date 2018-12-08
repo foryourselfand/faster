@@ -56,8 +56,8 @@ MonoBehaviour:
   firstScale: {x: 0, y: 0, z: 0}
   secondScale: {x: 1, y: 1, z: 1}
   count: 2
-  anotherSecondScale: {x: 0.5, y: 0.5, z: 0.5}
   secondSpeed: 2
+  anotherSecondScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!114 &114515028373730276
 MonoBehaviour:
   m_ObjectHideFlags: 1

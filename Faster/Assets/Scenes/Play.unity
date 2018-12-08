@@ -1168,7 +1168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDot: {fileID: 1257212205381340, guid: 0c7f629812f404a70b21b84fa88544f7, type: 2}
-  dotToSpawn: {fileID: 0}
+  dotToSpawn: {fileID: 1257212205381340, guid: ed364983ebb4a4706bc58507805b8171, type: 2}
   decreasingType: {fileID: 1711172139}
 --- !u!1 &586449519
 GameObject:

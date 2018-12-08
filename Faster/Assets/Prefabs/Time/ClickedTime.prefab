@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4687676136948402}
   - component: {fileID: 212478093101744228}
-  - component: {fileID: 114556841437920734}
+  - component: {fileID: 114170002348834558}
   m_Layer: 0
-  m_Name: ClickedClassic
+  m_Name: ClickedTime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114556841437920734
+--- !u!114 &114170002348834558
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1445735335450758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47a90e6f648b4898b1654e324d054141, type: 3}
+  m_Script: {fileID: 11500000, guid: 453360e1ddf649d8b0104bccfbef1331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   firstScale: {x: 1, y: 1, z: 1}

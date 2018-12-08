@@ -5,7 +5,7 @@ public class IncreaseScoreDot : GridFillerDot
 {
     protected override void actionOnStart()
     {
-        ClassicMode.score += 1;
-        GameObject.Find("ScoreText").GetComponent<Text>().text = ClassicMode.score.ToString();
+        _GameMode.currentScore += 1;
+        GameObject.Find("ScoreText").GetComponent<Text>().text = _GameMode.currentScore.ToString();
     }
 }

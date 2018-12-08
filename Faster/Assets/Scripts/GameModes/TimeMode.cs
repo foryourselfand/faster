@@ -7,28 +7,13 @@ public class TimeMode : _GameMode
 {
     private int timeCount;
     private Text timeText;
+    private int currentCount;
+    private int minCount;
 
     protected override void Start()
     {
         base.Start();
         timeText = decreasingType.GetComponent<Text>();
-    }
-
-    public override void SpawnStartWave()
-    {
-        Debug.Log("Time New Wave");
-        StartCoroutine(DecreaseTimeScore());
-        
-    }
-
-    IEnumerator DecreaseTimeScore()
-    {
-        while (true)
-        {
-            timeCount--;
-            SetTimeTo(timeCount);
-            yield return new WaitForSeconds(1);
-        }
     }
 
     public override void ChangeIfAddition()
@@ -39,8 +24,42 @@ public class TimeMode : _GameMode
         SetTimeTo(timeCount);
     }
 
+    public override void ResetValues()
+    {
+        minCount = Random.Range(0, 3) + 2;
+        for (int i = 0; i < 4; i++)
+            SpawnNewDot(dotToSpawn);
+        currentCount = 5;
+        CheckForNewWave();
+    }
+
+    public override IEnumerator SpawnDots()
+    {
+        while (true)
+        {
+            timeCount--;
+            SetTimeTo(timeCount);
+            yield return new WaitForSeconds(1);
+        }
+    }
+
+    public void CheckForNewWave()
+    {
+        currentCount--;
+        if (currentCount <= minCount)
+        {
+            var temp = Random.Range(0, 3) + 2;
+            currentCount += temp;
+            for (int i = 0; i < temp; i++)
+                SpawnNewDot(dotToSpawn);
+            minCount = temp;
+        }
+
+        Debug.Log(string.Format("{0}\t{1}", currentCount, minCount));
+    }
+
     private void SetTimeTo(int count)
     {
-        timeText.text = string.Format("0:{0:0}", count);
+        timeText.text = string.Format("0:{0:00}", count);
     }
 }

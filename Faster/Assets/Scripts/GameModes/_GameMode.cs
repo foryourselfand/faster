@@ -6,6 +6,7 @@ public abstract class _GameMode : MonoBehaviour
 {
     public static string GameMode;
     public static bool Addition;
+    public static int currentScore;
     public GameObject startDot;
     public GameObject dotToSpawn;
     public GameObject decreasingType;
@@ -16,11 +17,27 @@ public abstract class _GameMode : MonoBehaviour
         decreasingType.SetActive(false);
     }
 
-    public abstract void SpawnStartWave();
-
     public abstract void ChangeIfAddition();
 
-    GridClicker GetFreeGrid()
+    public void Activate()
+    {
+        gameObject.SetActive(true);
+        decreasingType.SetActive(true);
+        ChangeIfAddition();
+    }
+
+    public void FirstSpawn()
+    {
+        Debug.Log("Once");
+        ResetValues();
+        StartCoroutine(SpawnDots());
+    }
+
+    public abstract void ResetValues();
+
+    public abstract IEnumerator SpawnDots();
+
+    private GridClicker GetFreeGrid()
     {
         GridClicker tempGrid;
         do
@@ -35,12 +52,6 @@ public abstract class _GameMode : MonoBehaviour
         return tempGrid;
     }
 
-    public void SpawnStart()
-    {
-        var spawnedDot = SpawnNewDot(startDot);
-        GameObject.Find("StartText").transform.position = spawnedDot.transform.position;
-    }
-
     protected GameObject SpawnNewDot(GameObject newDot)
     {
         var freeGrid = GetFreeGrid();
@@ -49,11 +60,9 @@ public abstract class _GameMode : MonoBehaviour
         return spawnedDot;
     }
 
-
-    public void Activate()
+    public void SpawnStart()
     {
-        gameObject.SetActive(true);
-        decreasingType.SetActive(true);
-        ChangeIfAddition();
+        var spawnedDot = SpawnNewDot(startDot);
+        GameObject.Find("StartText").transform.position = spawnedDot.transform.position;
     }
 }

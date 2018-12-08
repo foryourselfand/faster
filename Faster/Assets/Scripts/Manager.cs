@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Manager : MonoBehaviour
 {
-    
     private _GameMode activeSpawner;
 
     private void Awake()
@@ -13,12 +12,11 @@ public class Manager : MonoBehaviour
     void Start()
     {
         activeSpawner.Activate();
-        activeSpawner.SpawnStart();    
-        
+        activeSpawner.SpawnStart();
     }
 
-    public void SpawnNewWave()
+    public void FirstSpawn()
     {
-        activeSpawner.SpawnStartWave();
+        activeSpawner.FirstSpawn();
     }
 }

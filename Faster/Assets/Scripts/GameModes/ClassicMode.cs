@@ -5,23 +5,7 @@ using UnityEngine;
 public class ClassicMode : _GameMode
 {
     private int heartCount;
-    public static int score;
-    
-    public override void SpawnStartWave()
-    {
-        score = 0;
-        Debug.Log("Classic New Wave");
-        StartCoroutine(SpawnDots());
-    }
-    
-    IEnumerator SpawnDots()
-    {
-        while (true)
-        {
-            SpawnNewDot(dotToSpawn);
-            yield return new WaitForSeconds(1);
-        }
-    }
+    protected float secTillNext;
 
     public override void ChangeIfAddition()
     {
@@ -36,6 +20,21 @@ public class ClassicMode : _GameMode
         {
             heartCount += 2;
             decreasingType.transform.position = new Vector3(-0.5f, 0, 0);
+        }
+    }
+
+    public override void ResetValues()
+    {
+        currentScore = 0;
+        secTillNext = 1;
+    }
+
+    public override IEnumerator SpawnDots()
+    {
+        while (true)
+        {
+            SpawnNewDot(dotToSpawn);
+            yield return new WaitForSeconds(secTillNext);
         }
     }
 }
