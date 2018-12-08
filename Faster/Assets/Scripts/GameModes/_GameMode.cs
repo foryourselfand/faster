@@ -56,8 +56,6 @@ public abstract class _GameMode : MonoBehaviour
             var randomNumber = Random.Range(0, 24);
             var gridName = string.Format("SmallDefaultButton ({0})", randomNumber);
             tempGrid = GameObject.Find(gridName).gameObject.GetComponent<GridClicker>();
-            if (!tempGrid.isFree)
-                Debug.Log(tempGrid.name);
         } while (!tempGrid.isFree);
 
         tempGrid.isFree = false;

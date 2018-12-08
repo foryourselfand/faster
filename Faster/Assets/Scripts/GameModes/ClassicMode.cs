@@ -28,7 +28,6 @@ public class ClassicMode : _GameMode
         secTillNext = 0.8f;
     }
 
-
     protected override void ActionInCoroutine()
     {
         SpawnNewDot(dotToSpawn);
