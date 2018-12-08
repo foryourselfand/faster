@@ -9,8 +9,11 @@ public class _DotSpawner : MonoBehaviour
 
     public void SpawnDot(_GrowDot dotToSpawn)
     {
-        child = Instantiate(dotToSpawn, transform.position, Quaternion.identity);
-        child.transform.parent = transform;
+        if (_GameMode.isPlaying == 1)
+        {
+            child = Instantiate(dotToSpawn, transform.position, Quaternion.identity);
+            child.transform.parent = transform;
+        }
     }
 
     public void SpawnDot()

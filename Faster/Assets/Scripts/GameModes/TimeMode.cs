@@ -33,14 +33,10 @@ public class TimeMode : _GameMode
         CheckForNewWave();
     }
 
-    public override IEnumerator SpawnDots()
+    protected override void ActionInCoroutine()
     {
-        while (true)
-        {
-            timeCount--;
-            SetTimeTo(timeCount);
-            yield return new WaitForSeconds(1);
-        }
+        timeCount--;
+        SetTimeTo(timeCount);
     }
 
     public void CheckForNewWave()
@@ -55,7 +51,7 @@ public class TimeMode : _GameMode
             minCount = temp;
         }
 
-        Debug.Log(string.Format("{0}\t{1}", currentCount, minCount));
+//        Debug.Log(string.Format("{0}\t{1}", currentCount, minCount));
     }
 
     private void SetTimeTo(int count)

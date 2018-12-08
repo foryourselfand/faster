@@ -15,8 +15,8 @@ public class Manager : MonoBehaviour
         activeSpawner.SpawnStart();
     }
 
-    public void FirstSpawn()
+    public _GameMode GetActiveMode()
     {
-        activeSpawner.FirstSpawn();
+        return activeSpawner;
     }
 }

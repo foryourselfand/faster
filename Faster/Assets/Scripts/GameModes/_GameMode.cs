@@ -4,12 +4,14 @@ using UnityEngine;
 
 public abstract class _GameMode : MonoBehaviour
 {
+    public static int isPlaying = 1;
     public static string GameMode;
     public static bool Addition;
     public static int currentScore;
     public GameObject startDot;
     public GameObject dotToSpawn;
     public GameObject decreasingType;
+    protected float secTillNext = 1;
 
     protected virtual void Start()
     {
@@ -28,14 +30,23 @@ public abstract class _GameMode : MonoBehaviour
 
     public void FirstSpawn()
     {
-        Debug.Log("Once");
+        isPlaying = 1;
         ResetValues();
         StartCoroutine(SpawnDots());
     }
 
     public abstract void ResetValues();
 
-    public abstract IEnumerator SpawnDots();
+    public virtual IEnumerator SpawnDots()
+    {
+        while (isPlaying == 1)
+        {
+            ActionInCoroutine();
+            yield return new WaitForSeconds(secTillNext);
+        }
+    }
+
+    protected abstract void ActionInCoroutine();
 
     private GridClicker GetFreeGrid()
     {
@@ -50,6 +61,12 @@ public abstract class _GameMode : MonoBehaviour
         tempGrid.isFree = false;
 
         return tempGrid;
+    }
+
+    public void GameOver()
+    {
+        isPlaying = 0;
+        StopCoroutine(SpawnDots());
     }
 
     protected GameObject SpawnNewDot(GameObject newDot)

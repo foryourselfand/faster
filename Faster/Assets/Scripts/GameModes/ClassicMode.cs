@@ -29,12 +29,9 @@ public class ClassicMode : _GameMode
         secTillNext = 1;
     }
 
-    public override IEnumerator SpawnDots()
+
+    protected override void ActionInCoroutine()
     {
-        while (true)
-        {
-            SpawnNewDot(dotToSpawn);
-            yield return new WaitForSeconds(secTillNext);
-        }
+        SpawnNewDot(dotToSpawn);
     }
 }

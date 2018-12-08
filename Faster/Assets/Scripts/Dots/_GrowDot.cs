@@ -22,7 +22,7 @@ public class _GrowDot : MonoBehaviour
 
     void Update()
     {
-        transform.localScale = Vector3.MoveTowards(transform.localScale, target, Time.deltaTime * speed);
+        ChangeScale();
 
         if (transform.localScale == target)
         {
@@ -43,6 +43,11 @@ public class _GrowDot : MonoBehaviour
                 actionOnEnd();
             }
         }
+    }
+
+    protected virtual void ChangeScale()
+    {
+        transform.localScale = Vector3.MoveTowards(transform.localScale, target, Time.deltaTime * speed * _GameMode.isPlaying);
     }
 
     private void fromFirstToSecond()

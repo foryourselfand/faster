@@ -9,8 +9,11 @@ public class _MaskDot : _DotSpawner
 
     public void Spawn(_GrowDot dot)
     {
-        SpawnDot(dot);
-        child.transform.parent = transform.parent.parent;
-        Destroy(transform.parent.gameObject);
+        if (_GameMode.isPlaying == 1)
+        {
+            SpawnDot(dot);
+            child.transform.parent = transform.parent.parent;
+            Destroy(transform.parent.gameObject);
+        }
     }
 }
