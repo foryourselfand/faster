@@ -5,7 +5,6 @@ using UnityEngine;
 public class ClassicMode : _GameMode
 {
     private int heartCount;
-    protected float secTillNext;
 
     public override void ChangeIfAddition()
     {
@@ -26,12 +25,20 @@ public class ClassicMode : _GameMode
     public override void ResetValues()
     {
         currentScore = 0;
-        secTillNext = 1;
+        secTillNext = 0.8f;
     }
 
 
     protected override void ActionInCoroutine()
     {
         SpawnNewDot(dotToSpawn);
+        DecreaseSeconds();
+    }
+
+    protected void DecreaseSeconds()
+    {
+        //TODO Level by level decreasing
+        if (secTillNext >= 0.4f)
+            secTillNext -= 0.05f;
     }
 }

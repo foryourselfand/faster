@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4007085173226268}
   - component: {fileID: 212532542706696770}
-  - component: {fileID: 114645798942213904}
+  - component: {fileID: 114057513468767742}
   m_Layer: 0
   m_Name: BadDot
   m_TagString: Untagged
@@ -41,7 +41,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114645798942213904
+--- !u!114 &114057513468767742
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1832655062797292}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b592c9df86fc499c9038ca86694f416f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5754239adb2c4e56b97dba84d8b9884c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   firstScale: {x: 0, y: 0, z: 0}

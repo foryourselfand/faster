@@ -70,7 +70,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotToSpawn: {fileID: 114556841437920734, guid: 1efb2e840e287474692710457c68b3ae,
     type: 2}
-  dotOnDecrease: {fileID: 114645798942213904, guid: 88885b7b78f64488c9e222c0254ed342,
+  dotOnDecrease: {fileID: 114057513468767742, guid: 88885b7b78f64488c9e222c0254ed342,
     type: 2}
 --- !u!212 &212202338402429860
 SpriteRenderer:
