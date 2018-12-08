@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Manager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     private _GameMode activeSpawner;
 
